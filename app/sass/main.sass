@@ -1,0 +1,74 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+
+#header-section
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/background/header-bg.jpg)
+	background-size: cover
+
+@mixin flex
+	display: flex 
+	flex-wrap: wrap
+
+@mixin flex-center
+	@include flex
+	justify-content: center
+	align-items: center
+
+@mixin flex-around
+	@include flex
+	justify-content: space-around
+	align-items: center
+
+
+
+@mixin flex-between
+	@include flex
+	justify-content: space-between
+	align-items: center
+
+
+.jumbotron
+	font-family: 'FGGR'
+	text-transform: uppercase
+	text-align: center
+	color: white
+	
+	padding-top: 22.5rem
+	padding-bottom: 13rem
+	
+
+
+
+
+	.jumbotron-title
+		font-size: 7.1rem
+
+	
+	.jumbotron-list
+		@include flex-around
+		max-width: 144rem
+		margin-left: auto
+		margin-right: auto
+		.jumbotron-item
+			max-width: 50rem
+			.jumbotron-item-name
+				font-size: 6rem
+
+			.button
+				padding: 25px 35px
+				font-family: 'FGGR'
+				font-size: 2.1rem
+				text-transform: uppercase
+
+.button 
+	border: none
+	&.is-transparent
+		background: transparent
+		border: 3px solid white
+		color: white
+
+	&.is-circle
+		border-radius: 50px
+@import "media" // Всегда в конце
