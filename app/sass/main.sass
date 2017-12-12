@@ -93,6 +93,11 @@
 #select
 	margin-top: 5rem
 
+#team
+	margin-top: 10rem
+	.container
+		max-width: 175rem
+
 .jumbotron
 	font-family: 'FGGR'
 	text-transform: uppercase
@@ -276,6 +281,32 @@
 		text-transform: lowercase;
 
 
+.contact-form
+	color: black
+	text-align: center
+	.title
+		margin-top: 1.5rem
+		font-size: 3.45rem
+		margin-bottom: 0
+	.subtitle
+		margin-top: -0.5rem
+		line-height: 1.1
+		font-size: 1.8rem
+	max-width: 46rem
+	form
+		margin: 0 auto
+		max-width: 39rem
+	input
+		width: 100%
+		margin: 0.5rem	
+		font-size: 2rem
+		padding: 2rem 3rem
+		color: black
+		background: transparent
+		border: 3px solid #535353
+		border-radius: 10px
+
+
 .footer 
 	margin-top: 6.5rem
 	background: #7d7d7d
@@ -313,20 +344,41 @@
 					text-decoration: none
 
 				
-
 		.contact-form
 			max-width: 46rem
 			form
 				max-width: 39rem
 			input
-				width: 100%
-				margin: 0.5rem	
-				font-size: 2rem
-				padding: 2rem 3rem
 				color: white
 				background: transparent
 				border: 3px solid white
-				border-radius: 10px
+				
 
 
+.human 
+	@include flex-between
+	margin-top: 6rem
+	.human-item
+		width: 36rem
+		font-size: 2.25rem
+		.human-name
+			display: flex
+			justify-content: flex-start
+			align-items: flex-end;
+			
+			color: black
+			font-weight: bold
+			img
+				width: 9rem;
+				height: 7rem;
+				object-fit: contain;
+				margin-right: 1rem
+				width: 9rem
+
+			p
+				margin-bottom: 1.2rem
+		.human-info
+			margin-top: 0rem
+			p
+				margin-top: 0rem
 @import "media" // Всегда в конце
