@@ -3,6 +3,9 @@
 @import "base"
 @import "vars"
 
+body
+	padding-bottom: 10rem
+
 #header-section
 	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/background/header-bg.jpg)
 	background-size: cover
@@ -78,6 +81,23 @@
 	&.is-circle
 		border-radius: 50px
 
+
+	&.is-xs
+		font-size: 2rem
+		padding: 0.5rem 1.5rem  
+
+
+	&.is-gray
+		color: #525252
+		border: 2px solid #525252
+		background: transparent
+		// &:hover,
+		// &:focus
+		// 	background: #525252
+		// 	color: white
+
+
+
 .container
 	max-width: 1920px
 	margin: 0 auto
@@ -94,6 +114,9 @@
 
 		&.is-gray
 			background: #95989f
+
+.center
+	@include flex-center
 
 .is-img-wrap
 	img
@@ -127,7 +150,7 @@
 	margin-bottom: 5rem
 	.opportunity-item
 		margin-bottom: 3rem
-		min-width: 49rem
+		min-width: 41.5rem
 		@include flex-center
 		justify-content: flex-start 
 		img
@@ -151,4 +174,38 @@
 		position: relative
 		left: 1rem
 		margin-right: 4rem !important
+
+.row
+	@include flex-around
+	align-items: flex-start
+
+.office-item
+	color: black
+	max-width: 32rem
+	margin-top: 5rem
+	
+
+	.office-name
+		line-height: 1
+		font-size: 3.55rem
+		padding-bottom: 0
+		margin-bottom: 0.5rem
+		margin-top: 0.5rem
+		font-weight: bold
+	.office-info
+		font-size: 2.75rem
+		margin-top: -1rem
+		padding-top: 0
+		margin-bottom: 0.5rem
+	.office-img	
+		width: 100%
+		height: 23rem
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+
+	.button
+		margin-top: 1rem
+		text-transform: lowercase;
 @import "media" // Всегда в конце
