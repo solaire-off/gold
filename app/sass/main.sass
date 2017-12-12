@@ -3,19 +3,7 @@
 @import "base"
 @import "vars"
 
-.section
-	.section-title
-		font-size: 4.5rem
-		margin-top: 0
-		margin-bottom: 0
-.is-wrap
-	padding: 0 10%
 
-#header-section
-	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/background/header-bg.jpg)
-	background-size: cover
-#select
-	margin-top: 5rem
 @mixin flex
 	display: flex 
 	flex-wrap: wrap
@@ -37,6 +25,73 @@
 	justify-content: space-between
 	align-items: center
 
+
+.header 
+	.header-content
+		padding: 0 1rem
+		max-width: 175rem
+		margin: 2rem auto
+		line-height: 1.2
+		display: flex
+		align-items: center
+
+
+		.header-logo
+			display: inline-block
+
+
+		.header-text
+			display: inline-block
+			margin-left: 2rem
+			font-family: sans-sefir 
+
+		.header-contact
+			font-size: 2.2rem
+			@include flex-center
+			.social
+				@include flex-center
+				align-items: center
+				padding-right: 2rem
+			img
+				width: 7rem
+				height: auto
+				padding-right: 0.5rem
+
+
+		.phone
+			display: inline-block
+			font-weight: bold
+			a
+				color: black		
+
+
+		.nav
+			display: inline-block
+			padding: 0 5rem
+			text-align: center
+
+			a
+				color: #434343
+				padding: 0 0.5rem
+				font-size: 2rem
+				&:hover,
+				&:focus
+					color: darken(#434343,20%)
+
+
+.section
+	.section-title
+		font-size: 4.5rem
+		margin-top: 0
+		margin-bottom: 0
+.is-wrap
+	padding: 0 10%
+
+#header-section
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/background/header-bg.jpg)
+	background-size: cover
+#select
+	margin-top: 5rem
 
 .jumbotron
 	font-family: 'FGGR'
@@ -161,6 +216,16 @@
 		justify-content: flex-start 
 		img
 			margin-right: 2.5rem
+			width: 6rem	
+			height: auto
+
+	.confer
+		position: relative
+		right: 0.9rem
+		img
+			width: 8rem;
+			margin-right: 1.5rem !important
+		
 
 .is-left
 	text-align: left
@@ -168,12 +233,7 @@
 	text-align: right	
 
 
-.confer
-	position: relative
-	right: 0.9rem
-	img
-		width: 9rem;
-		margin-right: 1.5rem !important
+
 
 .click 
 	img
