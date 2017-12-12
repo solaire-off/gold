@@ -3,13 +3,19 @@
 @import "base"
 @import "vars"
 
-body
-	padding-bottom: 10rem
+.section
+	.section-title
+		font-size: 4.5rem
+		margin-top: 0
+		margin-bottom: 0
+.is-wrap
+	padding: 0 10%
 
 #header-section
 	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/background/header-bg.jpg)
 	background-size: cover
-
+#select
+	margin-top: 5rem
 @mixin flex
 	display: flex 
 	flex-wrap: wrap
@@ -99,7 +105,7 @@ body
 
 
 .container
-	max-width: 1920px
+	max-width: 192rem
 	margin: 0 auto
 
 .columns
@@ -208,4 +214,59 @@ body
 	.button
 		margin-top: 1rem
 		text-transform: lowercase;
+
+
+.footer 
+	margin-top: 6.5rem
+	background: #7d7d7d
+	color: #ffffff
+	.in
+		padding-top: 14rem
+		padding-bottom: 14rem
+		max-width: 125rem
+		margin-left: auto
+		margin-right: auto
+		@include flex-around
+
+		.contact-info
+			max-width: 46rem
+			p
+					padding: 0
+					margin: 0
+					line-height: 1.2
+			.title
+				font-size: 4.5rem
+				font-weight: bold
+				margin-top: 0
+				margin-bottom: 4rem
+
+			.info
+				font-size: 3.3rem
+				margin-top: 0	
+				margin-bottom: 4rem
+
+
+			.phone
+				font-size: 3.6rem
+				a
+					color: white
+					text-decoration: none
+
+				
+
+		.contact-form
+			max-width: 46rem
+			form
+				max-width: 39rem
+			input
+				width: 100%
+				margin: 0.5rem	
+				font-size: 2rem
+				padding: 2rem 3rem
+				color: white
+				background: transparent
+				border: 3px solid white
+				border-radius: 10px
+
+
 @import "media" // Всегда в конце
