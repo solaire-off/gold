@@ -64,11 +64,91 @@
 
 .button 
 	border: none
+	cursor: pointer
 	&.is-transparent
 		background: transparent
 		border: 3px solid white
 		color: white
 
+		&:hover,
+		&:focus
+			background: white
+			color: #434343
+
 	&.is-circle
 		border-radius: 50px
+
+.container
+	max-width: 1920px
+	margin: 0 auto
+
+.columns
+	display: flex
+	max-height: 70rem
+	.column
+		position: relative
+		flex: 1;
+
+		&.is-2
+			flex: 2
+
+		&.is-gray
+			background: #95989f
+
+.is-img-wrap
+	img
+		width: 100%
+		height: 100%
+		object-fit: cover
+
+
+
+.content	
+	width: 80%
+	margin: 0 auto
+	font-size: 2.4rem
+	.title 
+		font-size: 4.5rem
+
+	&.is-thin
+		width: 32rem
+		.title	
+			width: 45rem;
+
+#picture
+	max-width: 51rem
+	position: absolute
+	right: 0
+	top: 4rem
+
+.opportunity
+	@include flex-between
+	font-size: 2.1rem
+	margin-bottom: 5rem
+	.opportunity-item
+		margin-bottom: 3rem
+		min-width: 49rem
+		@include flex-center
+		justify-content: flex-start 
+		img
+			margin-right: 2.5rem
+
+.is-left
+	text-align: left
+.is-right	
+	text-align: right	
+
+
+.confer
+	position: relative
+	right: 0.9rem
+	img
+		width: 9rem;
+		margin-right: 1.5rem !important
+
+.click 
+	img
+		position: relative
+		left: 1rem
+		margin-right: 4rem !important
 @import "media" // Всегда в конце
