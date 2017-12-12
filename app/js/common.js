@@ -1,6 +1,6 @@
 $(function() {
 
-	var mobileOffset;
+	var mobileOffset = 0;
 
 	$( ".cross" ).hide();
 	$( ".menu-mobile").css('display',"none");
@@ -26,13 +26,13 @@ $(function() {
 	});
 
 
-	$('.menu a, .menu-mobile a ').click(function (event) {
+	$('.nav a, .menu-mobile a ').click(function (event) {
 		event.preventDefault();
 
 		elementClick = $(this).attr("href");
 		destination = $(elementClick).position().top - mobileOffset;
 		$('html,body').stop().animate( { scrollTop: destination }, 1100 );
-		mobileOffset = 0;
+		mobileOffset = -30;
 
 
 	});
