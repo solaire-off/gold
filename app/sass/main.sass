@@ -46,34 +46,42 @@
 			font-family: sans-sefir 
 
 		.header-contact
-			font-size: 2.2rem
+			font-size: 1.9rem
 			@include flex-center
 			.social
 				@include flex-center
 				align-items: center
-				padding-right: 2rem
+				padding-right: 1rem
 			img
-				width: 7rem
+				width: 5rem
 				height: auto
-				padding-right: 0.5rem
+				padding-right: 1rem
+
+		.header-text
+			font-weight: bold;
+			font-size: 2rem;
 
 
 		.phone
 			display: inline-block
 			font-weight: bold
 			a
-				color: black		
+				color: black	
+			strong
+				color:  #ea5b0c	
 
 
 		.nav
 			display: inline-block
-			padding: 0 5rem
+			padding: 0 4rem
 			text-align: center
 
 			a
 				color: #434343
 				padding: 0 0.5rem
-				font-size: 2rem
+				font-size: 1.6rem;
+				font-weight: bold;
+				text-transform: uppercase;
 				&:hover,
 				&:focus
 					color: darken(#434343,20%)
@@ -90,6 +98,12 @@
 #header-section
 	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/background/header-bg.jpg)
 	background-size: cover
+
+#contact
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/background/footer-bg.jpg)
+	background-size: cover
+
+
 #select
 	margin-top: 5rem
 
@@ -152,6 +166,14 @@
 		font-size: 2rem
 		padding: 0.5rem 1.5rem  
 
+	&.is-primary
+		color: white
+		background: #ea5b0c
+
+		&:hover,
+		&:focus
+			background: darken(#ea5b0c, 5)
+
 
 	&.is-gray
 		color: #525252
@@ -190,6 +212,20 @@
 		height: 100%
 		object-fit: cover
 
+.is-form-wrap
+	display: flex
+	justify-content: flex-end
+	align-items: flex-end
+
+	.contact-form
+		border: 3px solid #ea5b0c;
+		border-radius: 2rem;
+		max-width: none
+		width: 100%;
+
+		.button
+			position: relative
+			top: 1.8rem
 
 
 .content	
@@ -200,7 +236,7 @@
 		font-size: 4.5rem
 
 	&.is-thin
-		width: 32rem
+		width: 40rem
 		.title	
 			width: 45rem;
 
@@ -287,7 +323,8 @@
 	.title
 		margin-top: 1.5rem
 		font-size: 3.45rem
-		margin-bottom: 0
+		margin-bottom: 1.5rem
+		line-height: 1.1
 	.subtitle
 		margin-top: -0.5rem
 		line-height: 1.1
@@ -303,7 +340,7 @@
 		padding: 2rem 3rem
 		color: black
 		background: transparent
-		border: 3px solid #535353
+		border: 3px solid #ea5b0c
 		border-radius: 10px
 
 
