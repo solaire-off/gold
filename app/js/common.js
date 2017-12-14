@@ -40,9 +40,36 @@ $(function() {
 		$('html,body').stop().animate( { scrollTop: destination }, 1100 );
 		
 		mobileOffset = -30;
-
-
 	});
+
+	$(".room-gallery").hide();
+	$(".room-gallery.active").addClass('used').fadeIn();
+
+	$(".room").click(function(){
+
+		$(".room").removeClass('active');
+		$(this).addClass('active');
+
+		var idActiveGallery = $(this).data('gallery');
+
+		$(".room-gallery.active").hide();
+
+		$(".room-gallery.active").removeClass('active');
+		$("#"+idActiveGallery).addClass('active').fadeIn();
+
+		if (!$("#"+idActiveGallery).hasClass('used')){
+			$("#"+idActiveGallery).addClass('used')
+			$("#"+idActiveGallery+" .slick-next").click();	
+		}
+		
+		
+	});
+
+	// $(".room").each(function(){
+
+	// 	setTimeout($(this).click(),200);
+	// })
+
 
 
 });

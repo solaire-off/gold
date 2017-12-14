@@ -107,10 +107,11 @@
 #select
 	margin-top: 5rem
 
+#ready-rooms,
 #team
 	margin-top: 10rem
 	.container
-		max-width: 175rem
+		max-width: 185rem
 
 .jumbotron
 	font-family: 'FGGR'
@@ -504,7 +505,57 @@
 
 .modal
 	max-width: 433px !important
+	input
+		border-color: #535353
 	.button
 		margin-top: 2rem
 		margin-bottom: 2rem
+
+
+.rooms
+	width: 80vw
+	max-width: 100rem;
+	margin: 0 auto
+	margin-top: 5rem;
+
+	.room-gallery
+		min-height: 50rem
+		&.used
+			min-height: none
+		// display: none
+		// &.active
+		// 	display: block
+		// // max-width: 100rem
+
+.select-rooms
+	margin-top: 5rem
+	@include flex-around
+	.room
+		margin-top: 5rem
+		padding: 1rem 4.5rem;
+		z-index: 1
+		cursor: pointer
+		&.active
+			border: 3px solid #ea5b0c
+			border-radius: 10px
+
+		img
+			width: 100%;
+			max-height: 10rem;
+			object-fit: contain;
+		.room-title 
+			font-size: 3rem
+			font-weight: bold
+			margin: 0 0 1rem 0;
+
+		.center
+			position: relative
+			.button
+				position: absolute
+				top: -0.6rem;
+				left: 50%
+				margin-left: -3.8rem
+				z-index: 3;
+
+
 @import "media" // Всегда в конце
