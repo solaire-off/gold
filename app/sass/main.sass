@@ -513,15 +513,20 @@
 
 
 .rooms
-	width: 80vw
-	max-width: 100rem;
-	margin: 0 auto
+	
 	margin-top: 5rem;
 
 	.room-gallery
-		min-height: 50rem
+		min-height: 50rem;
+		width: 60%;
+		max-width: 90rem;
+		margin: 0 auto;
 		&.used
 			min-height: none
+
+		img
+			height: auto;
+			object-fit: contain;
 		// display: none
 		// &.active
 		// 	display: block
@@ -532,12 +537,13 @@
 	@include flex-around
 	.room
 		margin-top: 5rem
-		padding: 1rem 4.5rem;
-		z-index: 1
+		padding: 2rem 4.7rem;
 		cursor: pointer
-		&.active
+		&:hover,
+		&:focus
 			border: 3px solid #ea5b0c
 			border-radius: 10px
+			padding: calc(2rem - 3px) calc(4.7rem - 3px);
 
 		img
 			width: 100%;
@@ -547,6 +553,7 @@
 			font-size: 3rem
 			font-weight: bold
 			margin: 0 0 1rem 0;
+			color: black
 
 		.center
 			position: relative
@@ -555,7 +562,11 @@
 				top: -0.6rem;
 				left: 50%
 				margin-left: -3.8rem
-				z-index: 3;
 
+
+.slick-initialized .slick-slide
+	max-height: 60rem
+	img
+		object-fit: cover
 
 @import "media" // Всегда в конце
