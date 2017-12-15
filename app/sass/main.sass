@@ -421,6 +421,7 @@
 				margin-bottom: 1.2rem
 		.human-info
 			margin-top: 0rem
+			color: black
 			p
 				margin-top: 0rem
 
@@ -503,8 +504,8 @@
 	background: black
 	color: white
 
-.modal
-	max-width: 433px !important
+.modal.is-contact
+	max-width: 50rem 
 	input
 		border-color: #535353
 	.button
@@ -568,5 +569,55 @@
 	max-height: 60rem
 	img
 		object-fit: cover
+
+
+.modal.human-modal
+	color: white
+	max-width: none
+	width: 92rem
+	font-size: 2rem
+
+	.container
+		width: 90%
+
+	.human-title
+		font-size: 8rem;
+		margin: 0;
+		margin-left: 0px;
+		padding: 0 8rem 0 0;
+		border-top: 3px solid #00ffff;
+		text-align: right;
+		width: 75%;
+		margin-left: -30px;
+		border-bottom: 3px solid #00ffff;
+		border-right: 3px solid #00ffff;
+		line-height: 1
+
+	.human-attr
+		@include flex-around
+		ul
+			margin-top: 0
+			padding-left: 10px
+
+	.human-price
+		text-align: center;
+		margin-top: 0;
+		font-size: 2.4rem;
+		margin-bottom: 0
+
+	.get-human
+		text-align: center;
+		font-size: 2.8rem;
+
+#popup-designer
+	background: url(../img/popup/designer.jpg);
+	background-size: cover;
+
+	.container
+		width: 70%
+
+#popup-call
+	background: url(../img/popup/call.jpg);
+	background-size: cover;
 
 @import "media" // Всегда в конце
