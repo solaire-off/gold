@@ -98,13 +98,23 @@
 			align-items: flex-start
 
 		.human-title
-			width: 100%
+			width: 100% !important
 
+	.slick-initialized .slick-slide
+		max-height: 40rem
+
+	.rooms .room-gallery
+		min-height: auto
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	/**/
 
+	.slick-initialized .slick-slide
+		max-height: 30rem
+
+	.modal.human-modal
+		min-width: 95%
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)

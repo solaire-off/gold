@@ -266,6 +266,7 @@
 					<div class="column is-2">
 						<p class="section-title">Выбрать команду</p>
 						<div class="human">
+							<a href="#popup-economist" rel="modal:open">
 							<div class="human-item">
 								<div class="human-name">
 									<img src="img/human/buh.png" alt="Деньги">
@@ -275,6 +276,8 @@
 									<p>от 7 000 руб. в месяц</p>
 								</div>
 							</div>
+						   </a>
+							<a href="#popup-lawyer" rel="modal:open">
 							<div class="human-item">
 								<div class="human-name">
 									<img src="img/human/molot.png" alt="Молот судьи">
@@ -284,6 +287,8 @@
 									<p>от 7 000 руб. в месяц</p>
 								</div>
 							</div>
+							</a>
+							<a href="#popup-help" rel="modal:open">
 							<div class="human-item">
 								<div class="human-name">
 									<img src="img/human/assist.png" alt="Силуэты людей">
@@ -293,6 +298,8 @@
 									<p>от 7 000 руб. в месяц</p>
 								</div>
 							</div>
+							</a>
+							<a href="#popup-manager" rel="modal:open">
 							<div class="human-item">
 								<div class="human-name">
 									<img src="img/human/docx.png" alt="Документ">
@@ -302,6 +309,8 @@
 									<p>от 7 000 руб. в месяц</p>
 								</div>
 							</div>
+							</a>
+							<a href="#popup-secretary" rel="modal:open">
 							<div class="human-item">
 								<div class="human-name">
 									<img src="img/human/stamp.png" alt="Штамп">
@@ -311,6 +320,7 @@
 									<p>от 4 900 руб. в месяц</p>
 								</div>
 							</div>
+							</a>
 							<a href="#popup-call" rel="modal:open">
 							<div class="human-item">
 								<div class="human-name">
@@ -322,6 +332,7 @@
 								</div>
 							</div>
 							</a>
+							<a href="#popup-trainer" rel="modal:open">
 							<div class="human-item">
 								<div class="human-name">
 									<img src="img/human/trener.png" alt="Тренер">
@@ -331,7 +342,8 @@
 									<p>от 45 000 руб. в месяц</p>
 								</div>
 							</div>
-							
+							</a>
+							<a href="#popup-it" rel="modal:open">
 							<div class="human-item">
 								<div class="human-name">
 									<img src="img/human/it.png" alt="Компьютер">
@@ -341,7 +353,7 @@
 									<p>от 1 500 руб. в месяц</p>
 								</div>
 							</div>
-
+							</a>
 							<a  href="#popup-designer" rel="modal:open">
 							<div class="human-item">
 								<div class="human-name">
@@ -371,7 +383,7 @@
 			</div>	
 
 		</section>
-
+<!-- 
 		<section class="section" >
 		<div class="get-it">
 			<div class="package">
@@ -397,7 +409,7 @@
 			
 		</div> 
 			
-		</section>
+		</section> -->
 
 		<style type="text/css">
 				.footer input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -527,6 +539,59 @@
 		  <div class="get-human"><a href="#get-more" rel="modal:open"><button class="button">нанять</button></a></div>		  
 		</div>
 
+		<div id="popup-help" class="human-modal modal">
+		  <p class="human-title">Бизнес-ассистент</p>
+		  <div class="container">
+		  	<p>Решает вопросы оперативной деятельности. Помогает с анализом 
+				конкурентов, поиском поставщиков и сотрудников, проводит 
+				первичные собеседования... <br/>
+				Да как Вы жили вообще без нее?!)
+			</p>
+
+			<div class="human-attr">
+				<div class="col">
+					<ul>
+						<li>Планирование рабочего дня
+						<li>Подготовка материалов для переговоров
+						<li>Контроль и планирование встреч
+					</ul>
+				</div>
+				<div class="col">
+					<ul>
+					<li>Перевод документации
+					<li>Ведение переписки
+					<li>Организация поездок руководителя
+					</ul>
+				</div>
+			</div>
+		  </div>
+		  <p class="human-price">7 000р</p>
+		  <div class="get-human"><a href="#get-more" rel="modal:open"><button class="button">нанять</button></a></div>		  
+		</div>
+
+		<div id="popup-trainer" class="human-modal modal">
+		  <p class="human-title">Бизнес-тренер</p>
+		  <div class="container">
+		  	<p> Научит правильно разговаривать с клиентом, слышать его потребности, 
+			да и написать скрипт, подходящий Вашему бизнесу. Кстати, наш тренер
+			любит продавать,так что и позвонит и примет звонки клиентов в 
+			качестве мастеркласса)
+			</p>
+
+			<div class="human-attr">
+				<div class="col">
+					<ul>
+						<li>Тренинг
+						<li>Консалтинг
+						<li>Коучинг-интервью
+
+					</ul>
+				</div>
+			</div>
+		  </div>
+		  <p class="human-price">45 000р</p>
+		  <div class="get-human"><a href="#get-more" rel="modal:open"><button class="button">нанять</button></a></div>		  
+		</div>
 
 		<div id="popup-call" class="human-modal modal">
 		  <p class="human-title">Call-центр</p>
@@ -551,7 +616,137 @@
 		</div>
 
 
-	
+		<div id="popup-it" class="human-modal modal">
+		  <p class="human-title">IT-специалист</p>
+		  <div class="container">
+		  	<p> Подключит и настроит всю оргтехнику. Настоит сервисы и подключит 
+				софт.Просто незаменимый сотрудник в наши дни!)
+			</p>
+
+			<div class="human-attr">
+				<div class="col">
+					<ul>
+						<li>Обслуживание компьютеров
+						<li>Приходящий системный администратор
+						<li>Обслуживание серверов
+						<li>Обслуживание сети
+						<li>Ремонт компьютеров
+						<li>Экстренное восстановление работы
+					</ul>
+				</div>
+			</div>
+		  </div>
+		  <p class="human-price">1 500р</p>
+		  <div class="get-human"><a href="#get-more" rel="modal:open"><button class="button">нанять</button></a></div>		  
+		</div>
+
+
+		<div id="popup-economist" class="human-modal modal">
+		  <p class="human-title">Бухгалтер</p>
+		  <div class="container">
+		  	<p> Ведёт бухгалтерию, консультирует и сдаёт отчётность, считает зарплату 
+				сотрудникам и готовит первичные документы. Помогает получить 
+				льготы для вашего бизнеса.
+			</p>
+
+			<div class="human-attr">
+				<div class="col">
+					<ul>
+						<li>Бухгалтерское сопровождение 
+						<li>Подготовка и сдача отчётности для ИП 
+						<li>Подготовка и сдача отчётности для ООО
+						<li>Открытие расчетных счетовss
+					</ul>
+				</div>
+			</div>
+		  </div>
+		  <p class="human-price">7 000р</p>
+		  <div class="get-human"><a href="#get-more" rel="modal:open"><button class="button">нанять</button></a></div>		  
+		</div>
+
+
+		<div id="popup-secretary" class="human-modal modal">
+		  <p class="human-title">Секретарь</p>
+		  <div class="container">
+		  	<p>Ваш главный помощник и правая рука (ну или левая, если Вы левша). 
+				Принимает телефонные звонки и встречает посетителей, решает 
+				организационные вопросы, спланирует рабочее время и поможет с 
+				ведением делопроизводства.
+			</p>
+
+			<div class="human-attr">
+				<div class="col">
+					<ul>
+						<li>Встреча гостей
+						<li>Организация телефонных переговоров руководителя
+						<li>Обработка и распределение корреспонденции
+					</ul>
+				</div>
+			</div>
+		  </div>
+		  <p class="human-price">4 900р</p>
+		  <div class="get-human"><a href="#get-more" rel="modal:open"><button class="button">нанять</button></a></div>		  
+		</div>
+
+
+		<div id="popup-manager" class="human-modal modal">
+		  <p class="human-title">Офис-менеджер</p>
+		  <div class="container">
+		  	<p>Обеспечивает работоспособность офиса,всей команды. Поможет и 
+				с канцтоварами (да-да, карандаши и бумага всегда найдутся) и 
+				позаботится о распределении звонков и задач. Забронирует 
+				переговорку и многое другое.)
+			</p>
+
+			<div class="human-attr">
+				<div class="col">
+					<ul>
+						<li>Материально-техническое обеспечение офиса
+						<li>Обработка первичной документации
+						<li>Документооборот
+					</ul>
+				</div>
+			</div>
+		  </div>
+		  <p class="human-price">7 000р</p>
+		  <div class="get-human"><a href="#get-more" rel="modal:open"><button class="button">нанять</button></a></div>		  
+		</div>
+
+
+	<div id="popup-lawyer" class="human-modal modal">
+		  <p class="human-title">Юрист</p>
+		  <div class="container">
+		  	<p>Поможет открыть Юридическое лицо и счет в Банке. Консультирует
+				по юридическим вопросам, делает договоры. Проверяет документы 
+				и контрагентов перед сделками. Составляет претензии и помогает 
+				урегулировать споры.
+			</p>
+
+			<div class="human-attr">
+				<div class="col">
+					<ul>
+						<li>Регистрация ООО
+						<li>Регистрация некоммерческих организаций
+						<li>Регистрация ИП
+						<li>Изменение ОКВЭД
+						<li>Получение копии устава
+
+					</ul>
+				</div>
+				<div class="col">
+					<ul>
+						<li>Изменения в учредительных документах
+						<li>Изменение состава участников ООО
+						<li>Исправление ошибок в ЕГЮРЛ
+						<li>Внесение изменений в ЕГРЮЛ
+						<li>Создание и поддержка базы договоров
+					</ul>
+				</div>
+			</div>
+		  </div>
+		  <p class="human-price">7 000р</p>
+		  <div class="get-human"><a href="#get-more" rel="modal:open"><button class="button">нанять</button></a></div>		  
+		</div>
 		<script>
 			$(function(){
 				$('form').submit(function(e){
