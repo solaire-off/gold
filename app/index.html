@@ -355,10 +355,10 @@
 						<div class="contact-form">
 							<p class="title">Заструдняетесь с выбором?</p>
 							<p class="subtitle">Получите бесплатную консультацию <br/>наших экспертов</p>
-							<form action="#">
-								<input type="text" placeholder="Имя">
-								<input type="text" placeholder="Телефон">
-								<input type="text" placeholder="Email">
+							<form action="mail.php" method="POST">
+								<input type="text" name="Name" placeholder="Имя">
+								<input type="text" name="Phone" placeholder="Телефон">
+								<input type="text" name="Email" placeholder="Email">
 								<button class="button is-xs is-primary">получить консультацию</button>
 							</form>
 						</div>
@@ -409,10 +409,10 @@
 					</div>
 				</div>
 				<div class="contact-form">
-					<form action="#" method="POST">
-						<input type="text" placeholder="Имя">
-						<input type="text" placeholder="Телефон">
-						<input type="text" placeholder="Email">
+					<form action="mail.php" method="POST">
+						<input type="text" name="Name" placeholder="Имя">
+						<input type="text" name="Phone" placeholder="Телефон">
+						<input type="text" name="Email" placeholder="Email">
 						<p class="is-right is-wrap"><button class="button is-circle is-xs is-transparent">отправить</button></p>
 					</form>
 
@@ -424,6 +424,8 @@
 		<link rel="stylesheet" href="css/main.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 
+		
+		
 		
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
@@ -437,21 +439,93 @@
   			slidesToScroll: 1
 		});
 		</script>
+
 		
 
 		<div id="get-more" class="modal">
 		  <p>Чтобы получить более подробную информацию, оставьте свои данные.</p>
 		  <div class="contact-form">
-			<form action="#" method="POST">
-				<input type="text" placeholder="Имя">
-				<input type="text" placeholder="Телефон">
-				<input type="text" placeholder="Email">
+			<form action="mail.php" method="POST">
+				<input type="text" name="Name" placeholder="Имя">
+				<input type="text" name="Phone" placeholder="Телефон">
+				<input type="text" name="Email" placeholder="Email">
 				<div class="center">
 					<button class="button is-circle is-xs is-gray">отправить</button>
 				</div>
 			</form>
 		</div>
 		</div>
+
+
+		<div id="thanks" class="modal">
+		  <p>Спасибо! Данные успешно отправлены.</p>
+		  <div class="contact-form">
+			<form action="mail.php" method="POST">
+				<input type="text" name="Name" placeholder="Имя">
+				<input type="text" name="Phone" placeholder="Телефон">
+				<input type="text" name="Email" placeholder="Email">
+				<div class="center">
+					<button class="button is-circle is-xs is-gray">отправить</button>
+				</div>
+			</form>
+		</div>
+		</div>
+
+		<script>
+			$(function(){
+				$('form').submit(function(e){
+
+				e.preventDefault();
+				var m_method=$(this).attr('method');
+				var m_action=$(this).attr('action');
+				var m_id = $(this).attr('id');
+				var m_data=$(this).serialize();
+				$.ajax({
+					type: m_method,
+					url: m_action,
+					data: m_data,
+					success: function(result){
+						console.log("ee");
+						$("input").val('');
+						$(".jquery-modal.blocker.current").click();
+						// $("#thanks").modal();
+						yaCounter46810815.reachGoal('za');
+						}
+					});
+				});
+			});
+		</script>
+
+
+		<script type="text/javascript" >
+			(function (d, w, c) {
+			(w[c] = w[c] || []).push(function() {
+			try {
+			w.yaCounter46810815 = new Ya.Metrika({
+			id:46810815,
+			clickmap:true,
+			trackLinks:true,
+			accurateTrackBounce:true,
+			webvisor:true,
+			trackHash:true
+			});
+			} catch(e) { }
+			});
+
+			var n = d.getElementsByTagName("script")[0],
+			s = d.createElement("script"),
+			f = function () { n.parentNode.insertBefore(s, n); };
+			s.type = "text/javascript";
+			s.async = true;
+			s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+			if (w.opera == "[object Opera]") {
+			d.addEventListener("DOMContentLoaded", f, false);
+			} else { f(); }
+			})(document, window, "yandex_metrika_callbacks");
+	</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/46810815" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->	
 
 	</body>
 </html>
