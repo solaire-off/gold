@@ -38,8 +38,8 @@
 					<a href="#"><img src="img/whatsapp.png" alt="Logo whatsapp"></a>
 				</div>
 				<div class="phone">
-					<p><a href="tel:+79651264627">+7 (965) 126 46 27</a> <strong style="margin-left: 1rem">8:00-19:00</strong><br/>
-					   <a href="tel:+74993470446">+7 (499) 347 04 46</a> <strong style="margin-left: 6rem">24/7</strong></p>
+					<p><a href="tel:+79651264627">+7 (965) 126 46 27</a> <strong style="margin-left: 1rem">8:00-19:00 24/7</strong><br/>
+					   <a href="tel:+74993470446">+7 (499) 347 04 46</a> <!-- <strong style="margin-left: 6rem"> 24/7</strong></p> -->
 				</div>
 			</div>
 			</div>
@@ -372,9 +372,9 @@
 							<p class="title">Затрудняетесь с выбором?</p>
 							<p class="subtitle">Получите бесплатную консультацию <br/>наших экспертов</p>
 							<form action="mail.php" method="POST">
-								<input type="text" name="Name" placeholder="Имя">
-								<input type="text" name="Phone" placeholder="Телефон">
-								<input type="text" name="Email" placeholder="Email">
+								<input required type="text" name="Name" placeholder="Имя">
+								<input required type="text" name="Phone" placeholder="Телефон">
+								<input required type="text" name="Email" placeholder="Email">
 								<button class="button is-xs is-primary">получить консультацию</button>
 							</form>
 						</div>
@@ -432,18 +432,18 @@
 					<p class="title">Контакты</p>
 					<div class="info">
 						<p>Южнопортовая, 2 минуты 
-						от метро кожуховская.</p>
+						от метро Кожуховская.</p>
 					</div>
 					<div class="phone">
-						<p><a href="tel:+79651264627">+7 (965) 126 46 27</a> <a href="#"><img src="img/whatsapp-invert.png" alt=""></a></p>
-						<p><a href="tel:+74993470446">+7 (499) 347 04 46</a> <a href="#"><img src="img/telegram-invert.png" alt=""></a></p>
+						<p><a href="tel:+79651264627">+7 (965) 126 46 27</a> <a href="#"><img src="img/whatsapp-invert.png" alt=""></a> <a href="#"><img src="img/telegram-invert.png" alt=""></a></p>
+						<p><a href="tel:+74993470446">+7 (499) 347 04 46</a> <!-- <a href="#"><img src="img/telegram-invert.png" alt=""></a> --></p>
 					</div>
 				</div>
 				<div class="contact-form">
 					<form action="mail.php" method="POST">
-						<input type="text" name="Name" placeholder="Имя">
-						<input type="text" name="Phone" placeholder="Телефон">
-						<input type="text" name="Email" placeholder="Email">
+						<input required type="text" name="Name" placeholder="Имя">
+						<input required type="text" name="Phone" placeholder="Телефон">
+						<input required type="text" name="Email" placeholder="Email">
 						<p class="is-right is-wrap"><button class="button is-circle is-xs is-transparent">отправить</button></p>
 					</form>
 
@@ -477,9 +477,9 @@
 		  <p>Чтобы получить более подробную информацию, оставьте свои данные.</p>
 		  <div class="contact-form">
 			<form action="mail.php" method="POST">
-				<input type="text" name="Name" placeholder="Имя">
-				<input type="text" name="Phone" placeholder="Телефон">
-				<input type="text" name="Email" placeholder="Email">
+				<input required type="text" name="Name" placeholder="Имя">
+				<input required type="text" name="Phone" placeholder="Телефон">
+				<input required type="text" name="Email" placeholder="Email">
 				<div class="center">
 					<button class="button is-circle is-xs is-gray">отправить</button>
 				</div>
@@ -492,9 +492,9 @@
 		  <p>Спасибо! Данные успешно отправлены.</p>
 		  <div class="contact-form">
 			<form action="mail.php" method="POST">
-				<input type="text" name="Name" placeholder="Имя">
-				<input type="text" name="Phone" placeholder="Телефон">
-				<input type="text" name="Email" placeholder="Email">
+				<input required type="text" name="Name" placeholder="Имя">
+				<input required type="text" name="Phone" placeholder="Телефон">
+				<input required type="text" name="Email" placeholder="Email">
 				<div class="center">
 					<button class="button is-circle is-xs is-gray">отправить</button>
 				</div>
@@ -804,8 +804,8 @@
 <noscript><div><img src="https://mc.yandex.ru/watch/47029260" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 
-<!-- <script src="//cdn.callibri.ru/callibri.js" type="text/javascript"
+ <script src="//cdn.callibri.ru/callibri.js" type="text/javascript"
 charset="utf-8"></script>
- -->
+ 
 	</body>
 </html>
